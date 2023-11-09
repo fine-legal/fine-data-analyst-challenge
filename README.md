@@ -49,8 +49,7 @@ Guidelines:
 
 Deliverables:
 
-The student should provide a SQL script file containing the queries, with comments describing what each query does.
-This task is designed to test various levels of SQL knowledge, including joining multiple tables, aggregating data, sorting results, and applying filters. It also checks the student's ability to think about data from a business perspective, such as identifying sales trends or inventory issues.
+- Provide a SQL script file containing the queries, with comments describing what each query does.
 
 ### SQL Performance Tuning
 
