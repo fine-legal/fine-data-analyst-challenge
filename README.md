@@ -173,6 +173,7 @@ Please provide a google sheet witht he solution and a description what you did a
 
 ### Date formatting
 Please imagine you have a column with dates with the following format "Dec/1/23 16:11" and *Google Sheet is not recognising it as a date*. Now you should format this to a list of dates with the following format: yyyy-mm-dd
+
 Don't use the on boarding formatting capabilities of Google Sheets.
 
 ### Amount formatting
