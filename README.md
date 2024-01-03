@@ -178,7 +178,7 @@ Please imagine you have a column with dates with the following format "Dec/1/23 
 You have a list of amounts formatted in the following way 'EUR200,000.12'. Please reformat the amounts so they can be used to takes sums etc. 
 
 ### Additional data
-The ECB is offering lists of exchange rates per day.
+The ECB is offering lists of exchange rates per day. Find this data and download it.
 
 Set up a list of dummy data with an amount and a date formatted as shown above.
 Add a column with the exchange rate per day and calculate the Euro amount assuming all amounts are in USD.
