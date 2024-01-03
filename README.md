@@ -172,7 +172,8 @@ __Deliverables:__
 Please provide a google sheet witht he solution and a description what you did and your thoughts while doing it. 
 
 ### Date formatting
-Please imagine you have a column with dates with the following format "Dec/1/23 16:11" and Google Sheet is not recognising it as a date. Now you should format this to a list of dates with the following format: yyyy-mm-dd
+Please imagine you have a column with dates with the following format "Dec/1/23 16:11" and *Google Sheet is not recognising it as a date*. Now you should format this to a list of dates with the following format: yyyy-mm-dd
+Don't use the on boarding formatting capabilities of Google Sheets.
 
 ### Amount formatting
 You have a list of amounts formatted in the following way 'EUR200,000.12'. Please reformat the amounts so they can be used to takes sums etc. 
