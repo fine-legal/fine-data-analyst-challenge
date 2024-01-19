@@ -96,10 +96,10 @@ Imagine you are tasked with setting up a new dbt project to transform raw sales 
 
 __Raw Data Tables:__
 
-- __stg_sales:__ Contains raw sales data with fields such as sale_id, product_id, customer_id, sale_amount, sale_date.
-- __stg_products:__ Contains product information with fields like product_id, product_name, category_id.
-- __stg_customers:__ Contains customer information with fields such as customer_id, first_name, last_name, email.
-- __stg_categories:__ Contains category data with fields category_id, category_name.
+- __raw_sales:__ Contains raw sales data with fields such as sale_id, product_id, customer_id, sale_amount, sale_date.
+- __raw_products:__ Contains product information with fields like product_id, product_name, category_id.
+- __raw_customers:__ Contains customer information with fields such as customer_id, first_name, last_name, email.
+- __raw_categories:__ Contains category data with fields category_id, category_name.
 
 __Task:__
 You are required to design the transformation logic that will be implemented in dbt without actually setting up the dbt environment or writing any dbt code.
@@ -144,22 +144,6 @@ __stg_orders Table Structure:__
 __order_id__ (unique identifier for each order)
 __status__ (current status of the order, e.g., 'pending', 'shipped', 'delivered', 'canceled')
 __updated_at__ (timestamp of the last update to the order)
-
-__Task:__
-
-__Define the dbt Snapshot:__
-
-Use the dbt snapshot command to create a snapshot of the stg_orders table.
-Configure the snapshot to check for changes every 4 hours.
-Implement logic to only capture changes when the status field is updated.
-Make sure to include dbt_valid_from and dbt_valid_to timestamps to track when the status was active.
-
-__Build the Duration Calculation Model:__
-
-Create a dbt model that joins the snapshot to itself on the order_id to find the subsequent status for each order.
-Calculate the time spent in each status by subtracting the dbt_valid_from of the current status from the dbt_valid_to of the previous status for the same order_id.
-Exclude any current statuses by filtering out rows where dbt_valid_to is null.
-Group the results by status and calculate the average duration orders have spent in each status.
 
 __Deliverables:__
 
