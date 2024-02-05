@@ -171,6 +171,25 @@ Add a column with the exchange rate per day and calculate the Euro amount assumi
 
 ## Additional task: Text to CSV
 Imagine you have the following textfile and you have the task to create a table from it. How do you do it, what do you use?
+
+The table should have the columns like the first row in the file:
+- UserID
+- DataType
+- TransactionID
+- TransactionIDKey
+- TransactionTenantID
+- Time
+- TransactionTypeName
+- SessionDurationMins
+- IP
+- DeviceType
+- ID
+- GameType
+- GameName
+- GameVendorName
+- TransactionName
+- PaymentProvider
+  
 Please request the text file with me if you want to take on the challenge.
 
 
