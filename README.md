@@ -92,7 +92,7 @@ __Deliverables:__
 
 __Scenario:__
 
-Imagine you are tasked with setting up a new dbt project to transform raw sales data into a format that is useful for analysis. The raw data is loaded into staging tables every night and needs to be transformed into a star schema for the analytics team.
+Imagine you are tasked with setting up a new dbt project to transform raw sales data into a format that is useful for analysis. The raw data is loaded into raw data lake every night and needs to be transformed into a star schema for the analytics team.
 
 __Raw Data Tables:__
 
@@ -102,41 +102,20 @@ __Raw Data Tables:__
 - __raw_categories:__ Contains category data with fields category_id, category_name.
 
 __Task:__
-You are required to design the transformation logic that will be implemented in dbt without actually setting up the dbt environment or writing any dbt code.
+Please think about useful transformations. 
+You are not required to write any code nor to set up an evironment.
 
 __Model Planning:__
-
-Describe the models you would create for the transformation process, including their names and a brief description of their purpose.
+Describe the models you would create for the transformation process, including names and a brief description of their purpose.
 Outline the transformations you would apply to the raw data to convert it into a star schema format.
 
 __Testing Strategy:__
-
-Explain how you would ensure the integrity of the transformed data. Include examples of tests you would write for the models, such as uniqueness, referential integrity, and not-null tests.
-
-__Optional: Documentation:__
-
-Detail what information you would document for each model and why documentation is important for maintenance and collaboration.
-
-__Optional: Version Control:__
-
-Discuss the structure of your dbt project and how you would manage version control using Git.
-
-__Optional: Deployment Plan:__
-
-Describe the steps you would take to deploy your dbt models to production.
-
-__Deliverables:__
-
-- A document detailing the dbt models' design, including their dependencies.
-- A written testing strategy for the models.
-- An explanation of the documentation you would include.
-- An outline of the version control workflow.
-- A deployment plan for the dbt project.
+Explain how you would ensure the integrity of the transformed data. 
+Include examples of tests you think make sense for the models, such as uniqueness, referential integrity, and not-null tests.
 
 ### Calculating Average Order Status Duration
 
 __Scenario:__
-
 You have a stg_orders table in your data warehouse that gets updated every 4 hours with new order data. Your task is to track changes to the status column of this table and calculate the average time an order spends in each status.
 
 __stg_orders Table Structure:__
@@ -146,11 +125,7 @@ __status__ (current status of the order, e.g., 'pending', 'shipped', 'delivered'
 __updated_at__ (timestamp of the last update to the order)
 
 __Deliverables:__
-
-- The SQL code for the snapshot definition.
-- The SQL code for the duration calculation model.
-- A brief explanation of how the model works and any assumptions made in the calculation.
-- Suggestions for how to handle edge cases, such as orders with only one status or statuses that change multiple times within the 4-hour window.
+- SQL query to do the calculation
 
 ## Google Sheet
 Please provide a google sheet witht he solution and a description what you did and your thoughts while doing it. 
